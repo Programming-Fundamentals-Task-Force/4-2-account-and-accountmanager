@@ -28,26 +28,26 @@ Using the provided `Account.java` file as the starting point, enhance the `Accou
 
 Add the following methods to the `Account` class:
 
-- `public void suspend()`
+- `public void suspend()`:
   Suspends the account by setting its status to suspended.
 
-- `public void reactivate()`
+- `public void reactivate()`:
   Reactivates the account by setting its status back to active.
 
-- `public boolean isActive()`
+- `public boolean isActive()`:
   Checks if the account is in the active state. Returns true if active, otherwise returns false for accounts that are suspended or closed.
 
-- `public Account transferTo(Account destAcc, double amount)`
+- `public Account transferTo(Account destAcc, double amount)`:
   Transfers money from the current account to the specified destination account (`destAcc`) for the given amount. Returns the current account itself.
 
 The account status is represented using an enum. Extend the enum to include a suspended status alongside active and closed.
 
 ## Enhance the following methods in the Account class:
 
-- `public Account deposit(double amount)`
+- `public Account deposit(double amount)`:
   Modify to return the account itself.
 
-- `public Account withdraw(double amount)`
+- `public Account withdraw(double amount)`:
   Modify to return the account itself.
 
 ## Design the methods following the fluent API pattern, allowing method chaining, such as:
@@ -68,15 +68,15 @@ Using the provided `AccountManager.java` file as a starting point, enhance the `
 
 ## Add the following method to the AccountManager class:
 
-- `public Account[] listAccounts(Account.Status status)`
+- `public Account[] listAccounts(Account.Status status)`:
   An overloaded method that filters and returns only accounts with the specified status as an array.
 
 ## Enhance the following method in the AccountManager class:
 
-- `public Account[] listAccounts()`
+- `public Account[] listAccounts()`:
   Modify this method to delegate filtering to the `listAccounts(status)` method, selecting only accounts with the active status.
 
-The problem includes a `App` class with a main() method that demonstrates the usage of the `Account` class. The output when running the program should be:
+The problem includes the `App` class with `main()` method that demonstrates the usage of the `Account` class. The output when running the program should be:
 
 ```
 Newly created accounts:
