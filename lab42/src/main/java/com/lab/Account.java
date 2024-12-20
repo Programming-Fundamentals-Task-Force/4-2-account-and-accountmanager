@@ -1,3 +1,5 @@
+package com.lab;
+
 public class Account {
     public enum Status { ACTIVE, CLOSED };
 
