@@ -3,11 +3,11 @@ package com.lab;
 public class App {
     public static void main(String[] args) {
         AccountManager manager = new AccountManager();
-        manager.addAccount(new Account(100.));
-        manager.addAccount(new Account(200.));
-        manager.addAccount(new Account(300.));
-        manager.addAccount(new Account(400.));
-        manager.addAccount(new Account(500.));
+        manager.openAccount(100.00);
+        manager.openAccount(200.00);
+        manager.openAccount(300.00);
+        manager.openAccount(400.00);
+        manager.openAccount(500.00);
 
         System.out.println("Newly created accounts:");
         Account[] accounts = manager.listAccounts();

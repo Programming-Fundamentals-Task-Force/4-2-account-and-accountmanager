@@ -1,24 +1,21 @@
-package com.lab;
-
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-public class AccountManager {
+public class AccountRegistry {
     private ArrayList<Account> accounts = new ArrayList<Account>();
 
     private int countActiveAccounts() {
         int count = 0;
-        for (Account account: accounts)
+        for (Account account : accounts)
             if (account.getStatus() == Account.Status.ACTIVE)
                 count++;
         return count;
     }
 
-    public void addAccount(Account acc) {
-        if (acc == null)
-            throw new NullPointerException("Account is null.");
-        else
-            accounts.add(acc);
+    public Account openAccount(double initialBalance) {
+        Account account = new Account(initialBalance);
+        accounts.add(account);
+        return account;
     }
 
     public Account getAccount(String accountNumber) {
@@ -32,7 +29,7 @@ public class AccountManager {
         Account[] results = new Account[countActiveAccounts()];
 
         int idx = 0;
-        for (Account account: accounts)
+        for (Account account : accounts)
             if (account.getStatus() == Account.Status.ACTIVE)
                 results[idx++] = account;
 

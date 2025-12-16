@@ -35,7 +35,9 @@ public class Account {
         if (status != Status.ACTIVE)
             throw new IllegalStateException("Account is inactive.");
         else if (amount <= 0. || amount > balance)
-            throw new IllegalArgumentException("Amount must be positive and not exceeding balance.");
+            throw new IllegalArgumentException("Amount must be positive.");
+        else if (amount > balance)
+            throw new IllegalStateException("Account must not exceed balance.");
         else
             balance -= amount;
     }

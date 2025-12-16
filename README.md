@@ -15,7 +15,7 @@ mvn compile
 3. To run the program, execute:
 
 ```
-java -cp target/classes App
+java -cp target/classes com.lab.App
 ```
 
 The `-cp` option specifies the _classpath_ where the class files are.
