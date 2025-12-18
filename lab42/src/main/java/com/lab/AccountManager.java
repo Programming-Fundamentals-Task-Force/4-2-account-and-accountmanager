@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-public class AccountRegistry {
+public class AccountManager {
     private ArrayList<Account> accounts = new ArrayList<Account>();
 
     private int countActiveAccounts() {
