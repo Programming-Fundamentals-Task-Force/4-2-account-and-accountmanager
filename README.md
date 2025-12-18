@@ -20,6 +20,8 @@ java -cp target/classes com.lab.App
 
 The `-cp` option specifies the _classpath_ where the class files are.
 
+WARNING: Do not modify the .github or gradle-tests directories. These directories are essential for the automated grading process, and any changes may result in incorrect grading.
+
 ## Instructions
 
 This problem is similar to the previous `Account` assignment, but now includes `AccountManager` with the use of enums and `ArrayList`.
