@@ -51,7 +51,7 @@ jobs:
       with:
         test-name: Unit test 1
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testSuspend -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testSuspend -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 2
@@ -60,7 +60,7 @@ jobs:
       with:
         test-name: Unit test 2
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testReactivate -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testReactivate -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 3
@@ -69,7 +69,7 @@ jobs:
       with:
         test-name: Unit test 3
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testIsActive -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testIsActive -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 4
@@ -78,7 +78,7 @@ jobs:
       with:
         test-name: Unit test 4
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testTransferTo -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testTransferTo -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 5
@@ -87,7 +87,7 @@ jobs:
       with:
         test-name: Unit test 5
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testTransferToThrowsWhenSuspended -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testTransferToThrowsWhenSuspended -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 6
@@ -96,7 +96,7 @@ jobs:
       with:
         test-name: Unit test 6
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testDepositThrowsWhenSuspended -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testDepositThrowsWhenSuspended -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Unit test 7
@@ -105,7 +105,7 @@ jobs:
       with:
         test-name: Unit test 7
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testWithdrawThrowsWhenSuspended -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testWithdrawThrowsWhenSuspended -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Unit test 8
@@ -114,7 +114,7 @@ jobs:
       with:
         test-name: Unit test 8
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountTest.testFluentApiPattern -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountTest.testFluentApiPattern -p gradle-tests"
         timeout: 10
         max-score: 10
     - name: Unit test 9
@@ -123,7 +123,7 @@ jobs:
       with:
         test-name: Unit test 9
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountManagerTest.testListAccountsActive -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountManagerTest.testListAccountsActive -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Unit test 10
@@ -132,7 +132,7 @@ jobs:
       with:
         test-name: Unit test 10
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountManagerTest.testListAccountsSuspended -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountManagerTest.testListAccountsSuspended -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Unit test 11
@@ -141,7 +141,7 @@ jobs:
       with:
         test-name: Unit test 11
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountManagerTest.testListAccountsClosed -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountManagerTest.testListAccountsClosed -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Unit test 12
@@ -150,7 +150,7 @@ jobs:
       with:
         test-name: Unit test 12
         setup-command: ''
-        command: "./gradle-tests/gradlew test --tests org.example.AccountManagerTest.testListAccountsDefault -p gradle-tests"
+        command: "./gradle-tests/gradlew test --tests org.test.AccountManagerTest.testListAccountsDefault -p gradle-tests"
         timeout: 10
         max-score: 5
     - name: Autograding Reporter
